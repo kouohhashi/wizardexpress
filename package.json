@@ -1,0 +1,23 @@
+{
+  "name": "@kouohhashi/wizardexpress",
+  "version": "1.0.0",
+  "description": "This is a experimental node module for WizardExpress",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kouohhashi/wizardexpress.git"
+  },
+  "author": "Ko Ohashi <kouohhashi@gmail.com> (https://medium.com/@kouohhashi/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kouohhashi/wizardexpress/issues"
+  },
+  "homepage": "https://github.com/kouohhashi/wizardexpress#readme",
+  "devDependencies": {
+    "chai": "^4.0.2",
+    "mocha": "^3.4.2"
+  }
+}
