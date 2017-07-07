@@ -179,7 +179,7 @@ module.exports = {
     module.exports.send({
       'action':{
         'type':'pageview',
-        'timestamp' = new Date().getTime()
+        'timestamp':new Date().getTime()
       },
       'window_location':window.location,
       'referrer':document.referrer
