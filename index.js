@@ -288,13 +288,13 @@ module.exports = {
       // }
 
       module.exports.last_action_timestamp = timestamp;
-      module.exports.action_log.push({
+      module.exports.action_log.push([{
         'action':action,
         'window_location':window.location,
         //'browser_id':module.exports.browser_id,
         //'session_id':module.exports.session_id,
         'referrer':document.referrer
-      });
+      }]);
     }
 
   },
