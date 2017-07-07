@@ -1,0 +1,114 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/kouohhashi/.nvm/versions/node/v6.11.0/bin/node',
+1 verbose cli   '/Users/kouohhashi/.nvm/versions/node/v6.11.0/bin/npm',
+1 verbose cli   'publish',
+1 verbose cli   '--access=public' ]
+2 info using npm@3.10.10
+3 info using node@v6.11.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/kouohhashi/Desktop/my_npm_projects/wizardexpress',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/kouohhashi/.npm/@kouohhashi/wizardexpress/1.0.1/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/kouohhashi/.npm correctMkdir not in flight; initializing
+10 info lifecycle @kouohhashi/wizardexpress@1.0.1~prepublish: @kouohhashi/wizardexpress@1.0.1
+11 silly lifecycle @kouohhashi/wizardexpress@1.0.1~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/Users/kouohhashi/.npm/@kouohhashi/wizardexpress/1.0.1/package.tgz',
+12 verbose tar pack   '/Users/kouohhashi/Desktop/my_npm_projects/wizardexpress' ]
+13 verbose tarball /Users/kouohhashi/.npm/@kouohhashi/wizardexpress/1.0.1/package.tgz
+14 verbose folder /Users/kouohhashi/Desktop/my_npm_projects/wizardexpress
+15 verbose addLocalTarball adding from inside cache /Users/kouohhashi/.npm/@kouohhashi/wizardexpress/1.0.1/package.tgz
+16 verbose correctMkdir /Users/kouohhashi/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd @kouohhashi/wizardexpress@1.0.1
+18 verbose afterAdd /Users/kouohhashi/.npm/@kouohhashi/wizardexpress/1.0.1/package/package.json not in flight; writing
+19 verbose correctMkdir /Users/kouohhashi/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /Users/kouohhashi/.npm/@kouohhashi/wizardexpress/1.0.1/package/package.json written
+21 silly publish { name: '@kouohhashi/wizardexpress',
+21 silly publish   version: '1.0.1',
+21 silly publish   description: 'This is a experimental node module for WizardExpress',
+21 silly publish   main: 'index.js',
+21 silly publish   scripts: { test: 'mocha --reporter spec' },
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/kouohhashi/wizardexpress.git' },
+21 silly publish   author:
+21 silly publish    { name: 'Ko Ohashi',
+21 silly publish      email: 'kouohhashi@gmail.com',
+21 silly publish      url: 'https://medium.com/@kouohhashi/' },
+21 silly publish   license: 'MIT',
+21 silly publish   bugs: { url: 'https://github.com/kouohhashi/wizardexpress/issues' },
+21 silly publish   homepage: 'https://github.com/kouohhashi/wizardexpress#readme',
+21 silly publish   devDependencies: { chai: '^4.0.2', mocha: '^3.4.2' },
+21 silly publish   readme: 'Number Formatter\n=========\n\nA small library that adds commas to numbers\n\n## Installation\n\n  `npm install @kouohhashi/wizardexpress`\n\n## Usage\n\n    var numFormatter = require(\'@kouohhashi/wizardexpress\');\n\n    var formattedNum = numFormatter(35666);\n  \n  \n  Output should be `35,666`\n\n\n## Tests\n\n  `npm test`\n\n## Contributing\n\nIn lieu of a formal style guide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code.\n\n',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: '6e48a04ad6e4d6f34772f1c61279e4126943efa9',
+21 silly publish   _id: '@kouohhashi/wizardexpress@1.0.1',
+21 silly publish   _shasum: 'cd20df922807eaac00b35f763aa213c3c67a739c',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name @kouohhashi/wizardexpress
+24 silly mapToRegistry scope (from package name) @kouohhashi
+25 verbose mapToRegistry no registry URL found in name for scope @kouohhashi
+26 silly mapToRegistry using default registry
+27 silly mapToRegistry registry https://registry.npmjs.org/
+28 silly mapToRegistry data Result {
+28 silly mapToRegistry   raw: '@kouohhashi/wizardexpress',
+28 silly mapToRegistry   scope: '@kouohhashi',
+28 silly mapToRegistry   escapedName: '@kouohhashi%2fwizardexpress',
+28 silly mapToRegistry   name: '@kouohhashi/wizardexpress',
+28 silly mapToRegistry   rawSpec: '',
+28 silly mapToRegistry   spec: 'latest',
+28 silly mapToRegistry   type: 'tag' }
+29 silly mapToRegistry uri https://registry.npmjs.org/@kouohhashi%2fwizardexpress
+30 verbose publish registryBase https://registry.npmjs.org/
+31 silly publish uploading /Users/kouohhashi/.npm/@kouohhashi/wizardexpress/1.0.1/package.tgz
+32 verbose request uri https://registry.npmjs.org/@kouohhashi%2fwizardexpress
+33 verbose request sending authorization for write operation
+34 info attempt registry request try #1 at 10:19:24 AM
+35 verbose request using bearer token for auth
+36 verbose request id 3b42d5e1d542afcf
+37 http request PUT https://registry.npmjs.org/@kouohhashi%2fwizardexpress
+38 http 403 https://registry.npmjs.org/@kouohhashi%2fwizardexpress
+39 verbose headers { 'content-type': 'application/json',
+39 verbose headers   'cache-control': 'max-age=0',
+39 verbose headers   'content-length': '95',
+39 verbose headers   'accept-ranges': 'bytes',
+39 verbose headers   date: 'Fri, 07 Jul 2017 17:19:25 GMT',
+39 verbose headers   via: '1.1 varnish',
+39 verbose headers   connection: 'keep-alive',
+39 verbose headers   'x-served-by': 'cache-sjc3631-SJC',
+39 verbose headers   'x-cache': 'MISS',
+39 verbose headers   'x-cache-hits': '0',
+39 verbose headers   'x-timer': 'S1499447965.982376,VS0,VE271' }
+40 verbose request invalidating /Users/kouohhashi/.npm/registry.npmjs.org/_40kouohhashi_252fwizardexpress on PUT
+41 error publish Failed PUT 403
+42 verbose stack Error: "You cannot publish over the previously published version 1.0.1." : @kouohhashi/wizardexpress
+42 verbose stack     at makeError (/Users/kouohhashi/.nvm/versions/node/v6.11.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+42 verbose stack     at CachingRegistryClient.<anonymous> (/Users/kouohhashi/.nvm/versions/node/v6.11.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:290:14)
+42 verbose stack     at Request._callback (/Users/kouohhashi/.nvm/versions/node/v6.11.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
+42 verbose stack     at Request.self.callback (/Users/kouohhashi/.nvm/versions/node/v6.11.0/lib/node_modules/npm/node_modules/request/request.js:187:22)
+42 verbose stack     at emitTwo (events.js:106:13)
+42 verbose stack     at Request.emit (events.js:191:7)
+42 verbose stack     at Request.<anonymous> (/Users/kouohhashi/.nvm/versions/node/v6.11.0/lib/node_modules/npm/node_modules/request/request.js:1048:10)
+42 verbose stack     at emitOne (events.js:96:13)
+42 verbose stack     at Request.emit (events.js:188:7)
+42 verbose stack     at IncomingMessage.<anonymous> (/Users/kouohhashi/.nvm/versions/node/v6.11.0/lib/node_modules/npm/node_modules/request/request.js:969:12)
+43 verbose statusCode 403
+44 verbose pkgid @kouohhashi/wizardexpress
+45 verbose cwd /Users/kouohhashi/Desktop/my_npm_projects/wizardexpress
+46 error Darwin 16.6.0
+47 error argv "/Users/kouohhashi/.nvm/versions/node/v6.11.0/bin/node" "/Users/kouohhashi/.nvm/versions/node/v6.11.0/bin/npm" "publish" "--access=public"
+48 error node v6.11.0
+49 error npm  v3.10.10
+50 error code E403
+51 error "You cannot publish over the previously published version 1.0.1." : @kouohhashi/wizardexpress
+52 error If you need help, you may report this error at:
+52 error     <https://github.com/npm/npm/issues>
+53 verbose exit [ 1, true ]
