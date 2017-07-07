@@ -1,0 +1,199 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/kouohhashi/.nvm/versions/node/v6.11.0/bin/node',
+1 verbose cli   '/Users/kouohhashi/.nvm/versions/node/v6.11.0/bin/npm',
+1 verbose cli   'publish',
+1 verbose cli   '@kouohhashi/wizardexpress' ]
+2 info using npm@3.10.10
+3 info using node@v6.11.0
+4 verbose publish [ '@kouohhashi/wizardexpress' ]
+5 silly cache add args [ '@kouohhashi/wizardexpress', null ]
+6 verbose cache add spec @kouohhashi/wizardexpress
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '@kouohhashi/wizardexpress',
+7 silly cache add   scope: '@kouohhashi',
+7 silly cache add   escapedName: '@kouohhashi%2fwizardexpress',
+7 silly cache add   name: '@kouohhashi/wizardexpress',
+7 silly cache add   rawSpec: '',
+7 silly cache add   spec: 'latest',
+7 silly cache add   type: 'tag' }
+8 silly addNamed @kouohhashi/wizardexpress@latest
+9 verbose addNamed "latest" is being treated as a dist-tag for @kouohhashi/wizardexpress
+10 info addNameTag [ '@kouohhashi/wizardexpress', 'latest' ]
+11 silly mapToRegistry name @kouohhashi/wizardexpress
+12 silly mapToRegistry scope (from package name) @kouohhashi
+13 verbose mapToRegistry no registry URL found in name for scope @kouohhashi
+14 silly mapToRegistry using default registry
+15 silly mapToRegistry registry https://registry.npmjs.org/
+16 silly mapToRegistry data Result {
+16 silly mapToRegistry   raw: '@kouohhashi/wizardexpress',
+16 silly mapToRegistry   scope: '@kouohhashi',
+16 silly mapToRegistry   escapedName: '@kouohhashi%2fwizardexpress',
+16 silly mapToRegistry   name: '@kouohhashi/wizardexpress',
+16 silly mapToRegistry   rawSpec: '',
+16 silly mapToRegistry   spec: 'latest',
+16 silly mapToRegistry   type: 'tag' }
+17 silly mapToRegistry uri https://registry.npmjs.org/@kouohhashi%2fwizardexpress
+18 verbose addNameTag registry:https://registry.npmjs.org/@kouohhashi%2fwizardexpress not in flight; fetching
+19 verbose request uri https://registry.npmjs.org/@kouohhashi%2fwizardexpress
+20 verbose request no auth needed
+21 info attempt registry request try #1 at 10:14:09 AM
+22 verbose request using bearer token for auth
+23 verbose request id 0dab261a481b29f5
+24 verbose etag W/"595d39e2-9f2"
+25 verbose lastModified Wed, 05 Jul 2017 19:11:30 GMT
+26 http request GET https://registry.npmjs.org/@kouohhashi%2fwizardexpress
+27 http 304 https://registry.npmjs.org/@kouohhashi%2fwizardexpress
+28 verbose headers { server: 'nginx/1.10.3',
+28 verbose headers   'last-modified': 'Wed, 05 Jul 2017 19:11:30 GMT',
+28 verbose headers   etag: '"595d39e2-9f2"',
+28 verbose headers   'cache-control': 'max-age=0',
+28 verbose headers   'accept-ranges': 'bytes',
+28 verbose headers   date: 'Fri, 07 Jul 2017 17:14:09 GMT',
+28 verbose headers   via: '1.1 varnish',
+28 verbose headers   connection: 'keep-alive',
+28 verbose headers   'x-served-by': 'cache-sjc3134-SJC',
+28 verbose headers   'x-cache': 'MISS',
+28 verbose headers   'x-cache-hits': '0',
+28 verbose headers   'x-timer': 'S1499447649.356287,VS0,VE147' }
+29 silly get cb [ 304,
+29 silly get   { server: 'nginx/1.10.3',
+29 silly get     'last-modified': 'Wed, 05 Jul 2017 19:11:30 GMT',
+29 silly get     etag: '"595d39e2-9f2"',
+29 silly get     'cache-control': 'max-age=0',
+29 silly get     'accept-ranges': 'bytes',
+29 silly get     date: 'Fri, 07 Jul 2017 17:14:09 GMT',
+29 silly get     via: '1.1 varnish',
+29 silly get     connection: 'keep-alive',
+29 silly get     'x-served-by': 'cache-sjc3134-SJC',
+29 silly get     'x-cache': 'MISS',
+29 silly get     'x-cache-hits': '0',
+29 silly get     'x-timer': 'S1499447649.356287,VS0,VE147' } ]
+30 verbose etag https://registry.npmjs.org/@kouohhashi%2fwizardexpress from cache
+31 verbose get saving @kouohhashi/wizardexpress to /Users/kouohhashi/.npm/registry.npmjs.org/_40kouohhashi_252fwizardexpress/.cache.json
+32 verbose correctMkdir /Users/kouohhashi/.npm correctMkdir not in flight; initializing
+33 silly addNameTag next cb for @kouohhashi/wizardexpress with tag latest
+34 silly addNamed @kouohhashi/wizardexpress@1.0.0
+35 verbose addNamed "1.0.0" is a plain semver version for @kouohhashi/wizardexpress
+36 silly mapToRegistry name @kouohhashi/wizardexpress
+37 silly mapToRegistry scope (from package name) @kouohhashi
+38 verbose mapToRegistry no registry URL found in name for scope @kouohhashi
+39 silly mapToRegistry using default registry
+40 silly mapToRegistry registry https://registry.npmjs.org/
+41 silly mapToRegistry data Result {
+41 silly mapToRegistry   raw: '@kouohhashi/wizardexpress',
+41 silly mapToRegistry   scope: '@kouohhashi',
+41 silly mapToRegistry   escapedName: '@kouohhashi%2fwizardexpress',
+41 silly mapToRegistry   name: '@kouohhashi/wizardexpress',
+41 silly mapToRegistry   rawSpec: '',
+41 silly mapToRegistry   spec: 'latest',
+41 silly mapToRegistry   type: 'tag' }
+42 silly mapToRegistry uri https://registry.npmjs.org/@kouohhashi%2fwizardexpress
+43 verbose addRemoteTarball https://registry.npmjs.org/@kouohhashi/wizardexpress/-/wizardexpress-1.0.0.tgz not in flight; adding
+44 verbose addRemoteTarball [ 'https://registry.npmjs.org/@kouohhashi/wizardexpress/-/wizardexpress-1.0.0.tgz',
+44 verbose addRemoteTarball   'a543d1b60f563acad91ed883119af037b490a75d' ]
+45 info retry fetch attempt 1 at 10:14:09 AM
+46 info attempt registry request try #1 at 10:14:09 AM
+47 http fetch GET https://registry.npmjs.org/@kouohhashi/wizardexpress/-/wizardexpress-1.0.0.tgz
+48 verbose request using bearer token for auth
+49 http fetch 200 https://registry.npmjs.org/@kouohhashi/wizardexpress/-/wizardexpress-1.0.0.tgz
+50 silly fetchAndShaCheck shasum a543d1b60f563acad91ed883119af037b490a75d
+51 verbose addTmpTarball /var/folders/rh/h236j86x5hl19gj_4ly86htr0000gn/T/npm-4549-b50c2929/registry.npmjs.org/_40kouohhashi/wizardexpress/-/wizardexpress-1.0.0.tgz not in flight; adding
+52 verbose addTmpTarball already have metadata; skipping unpack for @kouohhashi/wizardexpress@1.0.0
+53 verbose correctMkdir /Users/kouohhashi/.npm correctMkdir not in flight; initializing
+54 silly cache afterAdd @kouohhashi/wizardexpress@1.0.0
+55 verbose afterAdd /Users/kouohhashi/.npm/@kouohhashi/wizardexpress/1.0.0/package/package.json not in flight; writing
+56 verbose correctMkdir /Users/kouohhashi/.npm correctMkdir not in flight; initializing
+57 verbose afterAdd /Users/kouohhashi/.npm/@kouohhashi/wizardexpress/1.0.0/package/package.json written
+58 silly publish { name: '@kouohhashi/wizardexpress',
+58 silly publish   version: '1.0.0',
+58 silly publish   description: 'This is a experimental node module for WizardExpress',
+58 silly publish   main: 'index.js',
+58 silly publish   scripts: { test: 'mocha --reporter spec' },
+58 silly publish   repository:
+58 silly publish    { type: 'git',
+58 silly publish      url: 'git+https://github.com/kouohhashi/wizardexpress.git' },
+58 silly publish   author:
+58 silly publish    { name: 'Ko Ohashi',
+58 silly publish      email: 'kouohhashi@gmail.com',
+58 silly publish      url: 'https://medium.com/@kouohhashi/' },
+58 silly publish   license: 'MIT',
+58 silly publish   bugs: { url: 'https://github.com/kouohhashi/wizardexpress/issues' },
+58 silly publish   homepage: 'https://github.com/kouohhashi/wizardexpress#readme',
+58 silly publish   devDependencies: { chai: '^4.0.2', mocha: '^3.4.2' },
+58 silly publish   gitHead: 'eecae72cf492273fb89bb050bbda128bdcd01187',
+58 silly publish   _id: '@kouohhashi/wizardexpress@1.0.0',
+58 silly publish   _shasum: 'a543d1b60f563acad91ed883119af037b490a75d',
+58 silly publish   _from: '@kouohhashi/wizardexpress@latest',
+58 silly publish   _npmVersion: '3.8.8',
+58 silly publish   _nodeVersion: '5.5.0',
+58 silly publish   _npmUser: { name: 'kouohhashi', email: 'kouohhashi@gmail.com' },
+58 silly publish   dist:
+58 silly publish    { shasum: 'a543d1b60f563acad91ed883119af037b490a75d',
+58 silly publish      tarball: 'https://registry.npmjs.org/@kouohhashi/wizardexpress/-/wizardexpress-1.0.0.tgz' },
+58 silly publish   maintainers: [ { name: 'kouohhashi', email: 'kouohhashi@gmail.com' } ],
+58 silly publish   _npmOperationalInternal:
+58 silly publish    { host: 's3://npm-registry-packages',
+58 silly publish      tmp: 'tmp/wizardexpress-1.0.0.tgz_1499281890702_0.9756457533221692' },
+58 silly publish   directories: {},
+58 silly publish   _resolved: 'https://registry.npmjs.org/@kouohhashi/wizardexpress/-/wizardexpress-1.0.0.tgz' }
+59 info lifecycle @kouohhashi/wizardexpress@1.0.0~prepublish: @kouohhashi/wizardexpress@1.0.0
+60 silly lifecycle @kouohhashi/wizardexpress@1.0.0~prepublish: no script for prepublish, continuing
+61 verbose getPublishConfig undefined
+62 silly mapToRegistry name @kouohhashi/wizardexpress
+63 silly mapToRegistry scope (from package name) @kouohhashi
+64 verbose mapToRegistry no registry URL found in name for scope @kouohhashi
+65 silly mapToRegistry using default registry
+66 silly mapToRegistry registry https://registry.npmjs.org/
+67 silly mapToRegistry data Result {
+67 silly mapToRegistry   raw: '@kouohhashi/wizardexpress',
+67 silly mapToRegistry   scope: '@kouohhashi',
+67 silly mapToRegistry   escapedName: '@kouohhashi%2fwizardexpress',
+67 silly mapToRegistry   name: '@kouohhashi/wizardexpress',
+67 silly mapToRegistry   rawSpec: '',
+67 silly mapToRegistry   spec: 'latest',
+67 silly mapToRegistry   type: 'tag' }
+68 silly mapToRegistry uri https://registry.npmjs.org/@kouohhashi%2fwizardexpress
+69 verbose publish registryBase https://registry.npmjs.org/
+70 silly publish uploading /Users/kouohhashi/.npm/@kouohhashi/wizardexpress/1.0.0/package.tgz
+71 verbose request uri https://registry.npmjs.org/@kouohhashi%2fwizardexpress
+72 verbose request sending authorization for write operation
+73 info attempt registry request try #1 at 10:14:09 AM
+74 verbose request using bearer token for auth
+75 http request PUT https://registry.npmjs.org/@kouohhashi%2fwizardexpress
+76 http 403 https://registry.npmjs.org/@kouohhashi%2fwizardexpress
+77 verbose headers { 'content-type': 'application/json',
+77 verbose headers   'cache-control': 'max-age=0',
+77 verbose headers   'content-length': '95',
+77 verbose headers   'accept-ranges': 'bytes',
+77 verbose headers   date: 'Fri, 07 Jul 2017 17:14:09 GMT',
+77 verbose headers   via: '1.1 varnish',
+77 verbose headers   connection: 'keep-alive',
+77 verbose headers   'x-served-by': 'cache-sjc3134-SJC',
+77 verbose headers   'x-cache': 'MISS',
+77 verbose headers   'x-cache-hits': '0',
+77 verbose headers   'x-timer': 'S1499447650.702740,VS0,VE222' }
+78 verbose request invalidating /Users/kouohhashi/.npm/registry.npmjs.org/_40kouohhashi_252fwizardexpress on PUT
+79 error publish Failed PUT 403
+80 verbose stack Error: "You cannot publish over the previously published version 1.0.0." : @kouohhashi/wizardexpress
+80 verbose stack     at makeError (/Users/kouohhashi/.nvm/versions/node/v6.11.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+80 verbose stack     at CachingRegistryClient.<anonymous> (/Users/kouohhashi/.nvm/versions/node/v6.11.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:290:14)
+80 verbose stack     at Request._callback (/Users/kouohhashi/.nvm/versions/node/v6.11.0/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
+80 verbose stack     at Request.self.callback (/Users/kouohhashi/.nvm/versions/node/v6.11.0/lib/node_modules/npm/node_modules/request/request.js:187:22)
+80 verbose stack     at emitTwo (events.js:106:13)
+80 verbose stack     at Request.emit (events.js:191:7)
+80 verbose stack     at Request.<anonymous> (/Users/kouohhashi/.nvm/versions/node/v6.11.0/lib/node_modules/npm/node_modules/request/request.js:1048:10)
+80 verbose stack     at emitOne (events.js:96:13)
+80 verbose stack     at Request.emit (events.js:188:7)
+80 verbose stack     at IncomingMessage.<anonymous> (/Users/kouohhashi/.nvm/versions/node/v6.11.0/lib/node_modules/npm/node_modules/request/request.js:969:12)
+81 verbose statusCode 403
+82 verbose pkgid @kouohhashi/wizardexpress
+83 verbose cwd /Users/kouohhashi/Desktop/my_npm_projects/wizardexpress
+84 error Darwin 16.6.0
+85 error argv "/Users/kouohhashi/.nvm/versions/node/v6.11.0/bin/node" "/Users/kouohhashi/.nvm/versions/node/v6.11.0/bin/npm" "publish" "@kouohhashi/wizardexpress"
+86 error node v6.11.0
+87 error npm  v3.10.10
+88 error code E403
+89 error "You cannot publish over the previously published version 1.0.0." : @kouohhashi/wizardexpress
+90 error If you need help, you may report this error at:
+90 error     <https://github.com/npm/npm/issues>
+91 verbose exit [ 1, true ]

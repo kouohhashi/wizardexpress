@@ -1,6 +1,6 @@
 {
   "name": "@kouohhashi/wizardexpress",
-  "version": "0.0.3",
+  "version": "1.0.1",
   "description": "This is a experimental node module for WizardExpress",
   "main": "index.js",
   "scripts": {
