@@ -175,6 +175,17 @@ module.exports = {
       })
     }, 3000);
 
+    // impression
+    module.exports.send({
+      'action':{
+        'type':'pageview',
+        'timestamp' = new Date().getTime()
+      },
+      'window_location':window.location,
+      'referrer':document.referrer
+    }, function(err, data){
+
+    });
   },
   'doSomething':function(ev){
     // console.log(ev);
@@ -187,7 +198,7 @@ module.exports = {
     var timestamp = new Date().getTime();
 
     var should_record = false;
-    if (ev.type == "click" || ev.type == "scroll"){
+    if (ev.type == "click"){
       should_record = true;
     } else if ( !module.exports.last_action_timestamp || (timestamp - module.exports.last_action_timestamp) > 100 ) {
       should_record = true;
@@ -205,56 +216,76 @@ module.exports = {
           'classList':ev.target.classList
         }
       }
-      var toElement = {};
-      if (ev.toElement && ev.toElement) {
-        toElement = {
-          'id':ev.toElement.id,
-          'tagName':ev.toElement.tagName,
-          'classList':ev.toElement.classList
-        }
-      }
-      var fromElement = {};
-      if (ev.fromElement && ev.fromElement) {
-        fromElement = {
-          'id':ev.fromElement.id,
-          'tagName':ev.fromElement.tagName,
-          'classList':ev.fromElement.classList
-        }
+      // var toElement = {};
+      // if (ev.toElement && ev.toElement) {
+      //   toElement = {
+      //     'id':ev.toElement.id,
+      //     'tagName':ev.toElement.tagName,
+      //     'classList':ev.toElement.classList
+      //   }
+      // }
+      // var fromElement = {};
+      // if (ev.fromElement && ev.fromElement) {
+      //   fromElement = {
+      //     'id':ev.fromElement.id,
+      //     'tagName':ev.fromElement.tagName,
+      //     'classList':ev.fromElement.classList
+      //   }
+      // }
+
+      var action = {
+        'type':ev.type,
+        'timestamp':timestamp,
+        'scrollTop':document.body.scrollTop,
+        'scrollLeft':document.body.scrollLeft,
+        'offsetHeight':document.body.offsetHeight,
+        'offsetWidth':document.body.offsetWidth,
+        'scrollHeight':document.body.scrollHeight,
+        'clientHeight':document.body.clientHeight,
+        'screen_width':screen.width,
+        'screen_height':screen.height,
+        'clientX':ev.clientX,
+        'clientY':ev.clientY,
+        'screenX':ev.screenX,
+        'screenY':ev.screenY,
+        'wheelDeltaX':ev.wheelDeltaX,
+        'wheelDeltaY':ev.wheelDeltaY,
+        'target':target
       }
 
-      var action = {}
-      if (ev.type == "scroll"){
-
-        action = {
-          'type':ev.type,
-          'timestamp':timestamp,
-          'scrollTop':document.body.scrollTop,
-          'scrollLeft':document.body.scrollTop,
-          'offsetHeight':document.body.offsetHeight,
-          'offsetWidth':document.body.offsetWidth,
-          'scrollHeight':document.body.scrollHeight,
-          'clientHeight':document.body.clientHeight,
-          'element':'document.body'
-        };
-      } else {
-        action = {
-          'type':ev.type,
-          'clientX':ev.clientX,
-          'clientY':ev.clientX,
-          'layerX':ev.layerX,
-          'layerY':ev.layerY,
-          'offsetX':ev.offsetX,
-          'offsetY':ev.offsetY,
-          'screenX':ev.screenX,
-          'screenY':ev.screenY,
-          'target':target,
-          'toElement':toElement,
-          'fromElement':fromElement,
-          'x':ev.x,
-          'y':ev.y,
-          'timestamp':timestamp,
-        }
-      }
+      // var action = {}
+      // if (ev.type == "scroll"){
+      //
+      //   action = {
+      //     'type':ev.type,
+      //     'timestamp':timestamp,
+      //     'scrollTop':document.body.scrollTop,
+      //     'scrollLeft':document.body.scrollTop,
+      //     'offsetHeight':document.body.offsetHeight,
+      //     'offsetWidth':document.body.offsetWidth,
+      //     'scrollHeight':document.body.scrollHeight,
+      //     'clientHeight':document.body.clientHeight,
+      //     'element':'document.body'
+      //   };
+      // } else {
+      //   action = {
+      //     'type':ev.type,
+      //     'clientX':ev.clientX,
+      //     'clientY':ev.clientX,
+      //     'layerX':ev.layerX,
+      //     'layerY':ev.layerY,
+      //     'offsetX':ev.offsetX,
+      //     'offsetY':ev.offsetY,
+      //     'screenX':ev.screenX,
+      //     'screenY':ev.screenY,
+      //     'target':target,
+      //     'toElement':toElement,
+      //     'fromElement':fromElement,
+      //     'x':ev.x,
+      //     'y':ev.y,
+      //     'timestamp':timestamp,
+      //   }
+      // }
 
       module.exports.last_action_timestamp = timestamp;
       module.exports.action_log.push({
