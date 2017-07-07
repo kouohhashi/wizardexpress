@@ -176,14 +176,14 @@ module.exports = {
     }, 3000);
 
     // impression
-    module.exports.send({
+    module.exports.send([{
       'action':{
         'type':'pageview',
         'timestamp':new Date().getTime()
       },
       'window_location':window.location,
       'referrer':document.referrer
-    }, function(err, data){
+    }], function(err, data){
 
     });
   },
